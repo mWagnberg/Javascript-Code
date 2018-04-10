@@ -1,0 +1,27 @@
+<nav class="navBar">
+    <h1>Awesome Code Snippets</h1>
+    <div class="insideNav">
+  <form action="/logout" method="post">
+    <input type="submit" value="Logout">
+  </form>
+    <a href="/">All the snippets</a>
+    <a href="/userPage">My snippets</a>
+  </div>
+</nav>
+<h2>Upload a code snippet</h2>
+<form action="/posta" method="post">
+    <textarea name="snippetArea" id="" cols="30" rows="10"></textarea>
+    <br>
+    <button type="submit">Save somtething to the database</button>
+</form>
+<h2>Your Snippets</h2>
+<h3>{{#each snippets}}
+    <form action="/update/{{id}}" method="post">
+    <textarea name="updateSnippetArea" id="" cols="30" rows="10">{{snippet}}</textarea>
+        <button type="submit" name="name">Update Snippet</button>
+    </form>
+    <form action="/remove/{{id}}" method="post">
+        <button type="submit">Remove Snippet</button>
+    </form>
+    {{/each}}
+</h3>

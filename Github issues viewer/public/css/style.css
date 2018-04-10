@@ -1,0 +1,123 @@
+body {
+  background-color: lightgray;
+  background-image: url('img/wallpaper.jpg');
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 52px;
+  animation-name: fadeInOut;
+  animation-duration: 3s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#issuesDiv {
+  float: left;
+  width: 70%;
+}
+
+#popupDiv {
+  float: right;
+  width: 25%;
+}
+
+.titleOutput {
+  width: 500px;
+  height: 30px;
+  background-color: black;
+  opacity: .5;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bodyOutput {
+  background-color: white;
+  color: black;
+}
+
+.commentAmountOutput {
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: right;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.toTheLeft {
+  width: 500px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+  animation-name: fadeInOut;
+  animation-duration: 3s;
+}
+
+.alignRight {
+  text-align: right;
+  margin-right: 5px;
+}
+
+.marginLeft {
+  margin-left: 5px;
+}
+
+.marginRight {
+  margin-right: 5px;
+}
+
+.newComment {
+  animation-duration: .5s;
+  animation-name: newBox;
+  animation-timing-function: ease-in-out;
+  float: right;
+  width: 300px;
+  min-height: 50px;
+  background-color: black;
+  opacity: .5;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  margin-bottom: 10px;
+}
+
+@keyframes newBox {
+  from {
+    width: 0px;
+    height: 0px;
+  }
+
+  to {
+    width: 300px;
+    min-height: 50px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .newComment {
+    float: left;
+  }
+  #popupDiv {
+    float: left;
+  }
+  .toTheLeft {
+    float: left;
+  }
+}

@@ -1,0 +1,21 @@
+<nav class="navBar">
+    <h1>Awesome Code Snippets</h1>
+    <div class="insideNav">
+    <form action="/login" method="post">
+      <input type="text" name="username" id="username" placeholder="Username...">
+      <input type="password" name="password" id="password" placeholder="Password...">
+      <input type="submit" value="Login">
+    </form>
+    <a href="/register">Register here</a>
+    </div>
+</nav>
+<br>
+<h2>Welcome to this code snippet site!</h2>
+<h3>Here are the snippets</h3>
+<h3>{{#each snippets}}
+    {{username}}
+    <br>
+    <textarea name="" id="" cols="70" rows="20" disabled>{{snippet}}</textarea>
+    <br>
+    {{/each}}
+</h3>

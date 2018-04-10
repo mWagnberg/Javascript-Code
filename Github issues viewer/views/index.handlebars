@@ -1,0 +1,40 @@
+<h1 class="header"><a href="https://github.com/mWagnberg"><img src="img/githubLogo.png" alt="" width="100px" height="100px"></a> Mickes Github Issues</h1>
+
+<template id="newIssueTemplate">
+  <div class="templateDiv">
+    <div class="titleOutput"></div>
+    <div class="bodyOutput"></div>
+    <div class="createdOutput"></div>
+    <div class="alignRight"><img src="img/message.svg" alt="" width="13px" height="13px"></img><span class="commentAmountOutput"></span></div>
+  </div>
+</template>
+
+<template id="newCommentTemplate">
+  <div class="commentTemplateDiv">
+    <div class="toTheRight">
+      <div class="profilePic"></div>
+      <div class="commentIssue"></div>
+      <div class="commentFrom"></div>
+      <div class="commentBody"></div>
+    </div>
+  </div>
+</template>
+
+<div id="issuesDiv">
+  {{#each issue}}
+    <div id="_{{id}}" class="toTheLeft">
+      <div class="titleOutput">{{title}}</div>
+      <div class="bodyOutput marginLeft">{{body}}</div>
+      <div class="marginLeft">Created at: {{created_at}}</div>
+      <div class="commentAmountOutput"><img src="img/message.svg" alt="" width="13px" height="13px"></img><span id="comment{{id}}" class="marginRight">{{comments}}</span></div>
+    </div>
+    <br>
+  {{/each}}
+</div>
+
+<ul>
+  <div id="popupDiv"></div>
+</ul>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/websocketClient.js"></script>

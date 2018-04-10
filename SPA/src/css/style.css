@@ -1,0 +1,244 @@
+body {
+  background:url('../image/background2.jpg') no-repeat;
+  background-size: cover;
+  font: 15px/1.5 Arial;
+}
+
+#container {
+  max-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: black;
+  opacity: .5;
+}
+
+.centering {
+  margin: 0 auto;
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+#footerUl ul {
+  list-style-type: none;
+  margin-top: 0px;
+}
+
+#footerUl ul li {
+  bottom: 0;
+  top: 0;
+}
+
+#footerUl ul li img {
+  float: left;
+  margin-right: 10px;
+  height: 50px;
+}
+
+#footerUl ul li img:hover, .smileyIconClass:hover {
+  cursor: pointer;
+}
+
+.smileyUl {
+  list-style-type: none;
+}
+
+.smileyUl li {
+  bottom: 0;
+  left: 0;
+}
+
+.smileyIconClass {
+  width: 20px;
+  height: 20px;
+  float: left;
+  padding-right: 5px;
+}
+
+.hideImage {
+  visibility: hidden
+}
+
+img {
+  width: 80px
+}
+
+.memoryIcon {
+  float: left;
+  width: 20px;
+  height: 18px;
+}
+
+.closeButton {
+  float: right;
+  color: white;
+  background: black;
+  border: none;
+  width: 20px;
+  height: 18px;
+}
+
+.textField {
+  height: 34px;
+  width: 150px;
+  font-size: 17px;
+  background: grey;
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
+.videoButton, #filterList, .buttonClass, .optionList {
+  background: black;
+  color: white;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.saveImageButton {
+  background: black;
+  color: white;
+  border: none;
+  display: inline-block;
+  width: 120px;
+  height: 25px;
+  font-size: 18px;
+}
+
+.closeButton:hover, .saveImageButton:hover, .videoButton:hover, .buttonClass:hover {
+  cursor: default;
+  border: 1px solid white;
+}
+
+.memoryWindow {
+  background: grey;
+  width: 340px;
+  height: 400px;
+  border: 2px solid black;
+}
+
+.dragableWindow {
+  background: black;
+  width: 100%;
+  height: 20px;
+}
+
+.chatWindow {
+  background: grey;
+  width: 340px;
+  height: 400px;
+  border: 2px solid black;
+}
+
+.parsedMessage {
+  float: right;
+  color: white;
+}
+
+.inputTextClass {
+  height: 8%;
+  width: 100%;
+  color: white;
+  background: grey;
+  border: 2px solid black;
+  border-left: none;
+}
+
+.inputButtonClass, .changeUserNameButtonClass{
+  height: 6%;
+  min-width: 17%;
+  color: white;
+  background: black;
+  border: none;
+  margin-top: 7px;
+}
+
+.messagesDiv {
+  word-wrap: break-word;
+  overflow-y: auto;
+  width: 100%;
+  height: 69%;
+  background: grey;
+}
+
+.gameWindow {
+  background: red;
+  width: 340px;
+  height: 400px;
+  border: 2px solid black;
+  border-top: 20px solid black;
+}
+
+.todoWindow {
+  background: white;
+  width: 340px;
+  height: 400px;
+  border: 2px solid black;
+  border-top: 20px solid black;
+}
+
+.submitClass {
+  background: white;
+  width: 340px;
+  height: 25px;
+  border: 2px solid black;
+}
+
+.colorOnTime {
+  color: white;
+}
+
+.videoClass {
+  width: 960px;
+  min-height: 370px;
+  background: #474646;
+  text-align: center;
+}
+
+.videoImageClass {
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+  float: left;
+}
+
+.underImageClass {
+  padding-top: 120px;
+  float: left;
+  word-wrap: break-word;
+}
+
+.windowText {
+  color: white;
+  padding-left: 10px;
+}
+
+.canvasTag {
+  display: none;
+}
+
+.spotClass {
+  width: 25px;
+  height: 25px;
+  background: black;
+  position: relative;
+  border-radius: 30px;
+}
+
+.enemyClass {
+  width: 100%;
+  height: 10px;
+  background: green;
+  position: relative;
+}

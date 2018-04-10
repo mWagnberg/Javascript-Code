@@ -1,0 +1,21 @@
+<nav>
+  <div id="loginNav">
+    <p></p>
+    <form action="/login" method="post">
+      <input type="text" name="username" id="username" placeholder="Username...">
+      <input type="password" name="password" id="password" placeholder="Password...">
+      <input type="submit" value="Login">
+    </form>
+    <a href="/register">Register here</a>
+  </div>
+
+  <div id="userNav">
+    <form action="/logout" method="post">
+      <input type="submit" value="Logout">
+    </form>
+    <ul>
+      <a href="/">All the snippets</a>
+      <a href="/userPage">My snippets</a>
+    </ul>
+  </div>
+</nav>

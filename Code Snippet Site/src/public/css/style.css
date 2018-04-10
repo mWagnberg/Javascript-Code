@@ -1,0 +1,34 @@
+body {
+  font: 15px/1.5 Arial;
+  min-height: 100%;
+}
+
+.navBar {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  float: right;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  opacity: 0.7;
+}
+
+.navBar h1 {
+  float: left;
+  color: white;
+}
+
+.insideNav {
+  float: right;
+}
+
+.insideNav form {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

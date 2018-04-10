@@ -1,0 +1,36 @@
+{
+  "name": "mw222uu-examination-3",
+  "version": "1.0.0",
+  "description": "Real-time web application fetching github issues",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv523/mw222uu-examination-3.git"
+  },
+  "keywords": [
+    "javascript",
+    "node.js",
+    "express.js",
+    "real-time-application",
+    "feth-github-issues"
+  ],
+  "author": "Michael Wagnberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv523/mw222uu-examination-3/issues"
+  },
+  "homepage": "https://github.com/1dv523/mw222uu-examination-3#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "pm2": "^2.9.1",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.4",
+    "standard": "^10.0.3"
+  }
+}

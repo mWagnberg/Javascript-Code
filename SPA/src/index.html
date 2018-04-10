@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <template id="memoryTemplate">
+            <a href="#"><img src="" alt=""></a>
+        </template>
+
+        <template id="optionsTemplate">
+            <div>
+                <form>
+                    <select name="memoryList">
+                        <option value="2">2x2</option>
+                        <option value="4">2x4</option>
+                        <option value="8">4x4</option>
+                    </select>
+                </form>
+            </div>
+        </template>
+
+        <template id="chatTemplate">
+            <div></div>
+                <ul class="smileyUl">
+                    <li><img src="/image/smiley.png" alt="Smiley Icon" data-smiley-name="smiley" class="smileyIconClass"></li>
+                    <li><img src="/image/bigSmiley.png" alt="Big Smiley Icon" data-smiley-name="bigSmiley" class="smileyIconClass"></li>
+                    <li><img src="/image/winkSmiley.png" alt="Winky Smiley Icon" data-smiley-name="winkSmiley" class="smileyIconClass"></li>
+                    <li><img src="/image/sadSmiley.png" alt="Sad Smiley Icon" data-smiley-name="sadSmiley" class="smileyIconClass"></li>
+                </ul>
+            <input type="text" name="" id="" class="inputTextClass" placeholder="Write your text here...">
+            <input type="button" value="" class="changeUserNameButtonClass">
+            <input type="button" value="" class="inputButtonClass">
+        </template>
+
+        <template id="filterTemplate">
+            <div class="underImageClass">
+                <form>
+                    <select name="filterList">
+                        <option value="none">No filter</option>
+                        <option value="grayscale(100%)">Black and White</option>
+                        <option value="blur(5px)">Blur</option>
+                        <option value="invert(75%)">Invert</option>
+                        <option value="sepia(100%)">Sepia</option>
+                        <option value="contrast(200%)">Contrast</option>
+                    </select>
+                </form>
+                <button class="videoButton">Take picture!</button>
+            </div>
+        </template>
+
+        <template id="videoTemplate">
+            <video id="videoTag" class="videoImageClass" autoplay></video>
+            <canvas class="canvasTag" width="400" height="300"></canvas>
+        </template>
+    </head>
+    <body ondrop="true">
+        <div id="container">
+            
+        </div>
+        <footer id="footerUl">
+            <ul id="appList">
+                <li><img src="/image/memory.png" alt="Memory Icon" data-app-title="Memory Game" class="iconClass"></li>
+                <li><img src="/image/chat.png" alt="Chat Icon" data-app-title="Chat Application" class="iconClass"></li>
+                <li><img src="/image/camera.png" alt="Video Icon" data-app-title="Video Application" class="iconClass"></li>
+            </ul>
+        </footer>
+
+        <script src="build.js"></script>
+    </body>
+</html>

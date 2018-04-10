@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <template id="templateTag">
+            <input type="radio" name="radio" id="radio">
+            <label for="radio"></label>
+        </template>
+        
+        <template id="textInputTemplate">
+            <input type="text" id="answerText" placeholder="Write your answer here...">
+        </template>
+
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="timer"></h1>
+            <div id="startTextInput">
+                <h2>Pick a nickname</h2>
+                <input type="text" name="idOnPlayer" id="idOnPlayer">
+                <button id="startBtn">Start</button>
+            </div>
+            <h1 id="question"></h1>
+            <form id="formId">
+                <div id="templateDiv">
+                
+                </div>
+                <input type="submit" value="OK">
+            </form>
+
+            <div id="resultDiv">
+                <h2 id="h2Id"></h2>
+                <h3 id="h3score"></h3>
+            </div>
+
+            <div id="wrongAnswer">
+                <h2 id="h2wrongAnswer"></h2>
+            </div>
+        </div>
+        <script src="build.js"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "mw222uu-examination-2",
+  "version": "1.0.0",
+  "description": "Web application that presents code snippets",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/js/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv523/mw222uu-examination-2.git"
+  },
+  "keywords": [
+    "code-snippets",
+    "javascript",
+    "node.js",
+    "express.js",
+    "mongoose"
+  ],
+  "author": "Michael Wagnberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv523/mw222uu-examination-2/issues"
+  },
+  "homepage": "https://github.com/1dv523/mw222uu-examination-2#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-flash-2": "^1.0.1",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^4.13.5",
+    "path": "^0.12.7",
+    "standard": "^10.0.3"
+  }
+}

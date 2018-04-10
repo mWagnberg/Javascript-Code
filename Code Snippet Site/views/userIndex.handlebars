@@ -1,0 +1,20 @@
+<nav class="navBar">
+  <h1>Awesome Code Snippets</h1>
+  <div class="insideNav">
+  <form action="/logout" method="post">
+    <input type="submit" value="Logout">
+  </form>
+  <ul>
+    <a href="/">All the snippets</a>
+    <a href="/userPage">My snippets</a>
+  </ul>
+  </div>
+</nav>
+<h2>Here are the snippets</h2>
+<h3>{{#each snippets}}
+    {{username}}
+    <br>
+    <textarea name="" id="" cols="70" rows="20" disabled>{{snippet}}</textarea>
+    <br>
+    {{/each}}
+</h3>

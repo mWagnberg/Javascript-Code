@@ -1,0 +1,11 @@
+body {
+  width: 70%;
+  margin: auto;
+  background: lightgray;
+  font: 15px/1.5 Arial;
+  text-align: center
+}
+
+#container {
+  border: 3px solid black;
+}
